@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="text-align: center;">
+    <nav class="navbar navbar-expand-sm sticky-top text-center" style="background-color: #c4ee09">
+     <div class="col-6 offset-3"> <a class="navbar-brand" href="index.html"
+        ><img
+          height="20px"
+          src="images\logo-footer.png"/></a>
+            <h4 style="text-align: center;">Secret Beauty Shop</h4></div>
+      </nav>
+
+      <!--CONTAINER-->
+      <div class="container">
+    <div class="row">
+            <h5><i>We have REAL brands for REAL cheap!</i></h5>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\blush1.png" alt="Blush">
+            <div class="card-body">
+              <h6 class="card-title">Classic Blush</h6>
+              <p class="card-text price">$30.50</p>
+              <button onclick="Add('Classic Blush', 30.50)">Add</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\bronzer.png" alt="Bronzer">
+            <div class="card-body">
+              <h6 class="card-title">Original Bronzer</h6>
+              <p class="card-text price">$33.00</p>
+              <button onclick="Add('Original Bronzer', 33.00)">Add</button>
+            </div>
+          </div>
+    </div>
+        
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\brushset.png" alt="Makeup Brush Set">
+            <div class="card-body">
+              <h6 class="card-title">Makeup Brush Set</h6>
+              <p class="card-text price">$20.00</p>
+              <button onclick="Add('Makeup Brush Set', 20)">Add</button>
+            </div>
+          </div>
+    </div>  
+      
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\contourstick.png" alt="contour stick">
+            <div class="card-body">
+              <h6 class="card-title">Popular Demand Contour Stick</h6>
+              <p class="card-text price">$20.50</p>
+              <button onclick="Add('Popular Demand Contour Stick', 20.5)">Add</button>
+            </div>
+          </div>
+    </div> 
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\dhc_mascara_double_protection_h_3913.png" alt="mascara">
+            <div class="card-body">
+              <h6 class="card-title">Mad Mascara</h6>
+              <p class="card-text price">$24.00</p>
+              <button onclick="Add('Mad Mascara', 24)">Add</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\eyeliner-black.png" alt="black eyeliner">
+            <div class="card-body">
+              <h6 class="card-title">Stripper Black eyeliner</h6>
+              <p class="card-text price">$15.50</p>
+              <button onclick="Add('Stripper Black eyeliner', 15.5)">Add</button>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\eyeshawdow1.png" alt="eyeshawdow">
+            <div class="card-body">
+              <h6 class="card-title">Bird View Eyeshawdow</h6>
+              <p class="card-text price">$17.50</p>
+              <button onclick="Add('Bird View Eyeshawdow', 17.5)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\foundationpalatte.png" alt="foundation palatte">
+            <div class="card-body">
+              <h6 class="card-title">Wanda's Eyeshawdow</h6>
+              <p class="card-text price">$18.00</p>
+              <button onclick="Add('Wandas Eyeshawdow', 18)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\lipglossshop-9-1.png" alt="lipgloss">
+            <div class="card-body">
+              <h6 class="card-title">Sexy Lipgloss</h6>
+              <p class="card-text price">$21.00</p>
+              <button onclick="Add('Sexy Lipgloss', 21)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\lipstick-3.png" alt="lipstick">
+            <div class="card-body">
+              <h6 class="card-title">Lovely Lipstick</h6>
+              <p class="card-text price">$32.00</p>
+              <button onclick="Add('Lovely lipstick', 32)">Add</button></p>
+            </div>
+          </div>
+    </div>
+   
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\lipstick-5.png" alt="lipstick">
+            <div class="card-body">
+              <h6 class="card-title">Lovely Lipstick</h6>
+              <p class="card-text price">$27.00</p>
+              <button onclick="Add('Lovely Lipstick', 27)">Add</button></p>
+            </div>
+          </div>
+    </div>
+ 
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\makeupremover.png" alt="makeup remover">
+            <div class="card-body">
+              <h6 class="card-title">Makeup Remover</h6>
+              <p class="card-text price">$9.00</p>
+              <button onclick="Add('Makeup Remover', 9)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\makeupremover2.png" alt="makeup remover">
+            <div class="card-body">
+              <h6 class="card-title">Cheap Makeup Remover</h6>
+              <p class="card-text price">$8.00</p>
+              <button onclick="Add('Cheap Makeup Remover', 8)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\nailpolish1.png" alt="nailpolish">
+            <div class="card-body">
+              <h6 class="card-title">Bestseller Nailpolish</h6>
+              <p class="card-text price">$15.00</p>
+              <button onclick="Add('Bestseller Nailpolish', 15)">Add</button></p>
+            </div>
+          </div>
+    </div>
+     
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\parfum1.png" alt="parfum">
+            <div class="card-body">
+              <h6 class="card-title">Parfum</h6>
+              <p class="card-text price">$47.00</p>
+              <button onclick="Add('Parfum', 47)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\primerspray.png" alt="Primer">
+            <div class="card-body">
+              <h6 class="card-title">Primer</h6>
+              <p class="card-text price">$12.00</p>
+              <button onclick="Add('Primer', 12)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\travelconcealer.png" alt="Travel Concealer">
+            <div class="card-body">
+              <h6 class="card-title">Travel Concealer</h6>
+              <p class="card-text price">$7.00</p>
+              <button onclick="Add('Travel Concealer', 7)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-6 offset-4" style="width: 18rem;">
+            <img class="card-img-top" src="images\wispyeyelashes.png" alt="Bestseller Wispy Eyelashes">
+            <div class="card-body">
+              <h6 class="card-title">Bestseller Wispy Eyelashes</h6>
+              <p class="card-text price">$12.00</p>
+              <button onclick="Add('Bestseller Wispy Eyelashes', 12)">Add</button></p>
+            </div>
+          </div>
+    </div>
+
+  <div class="row">
+    <p><button onclick="Receipt()">Check Out</button></p>
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
